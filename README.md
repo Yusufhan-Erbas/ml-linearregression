@@ -1,7 +1,5 @@
 # 🤖 Linear Regression App
-```
-⬆️ (Replace above with your app's name)
-```
+
 Linear regression app
 
 Description of the app ...
