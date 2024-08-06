@@ -1,5 +1,5 @@
 import streamlit as st
 
-st.title('🎈 App Name')
+st.title('🤖 ML Linear Regression')
 
-st.write('Hello world!')
+st.write('Machine Learning Model based on linear regression model')
