@@ -16,11 +16,11 @@ with st.expander("Walmart Data"):
 
 with st.expander("Walmart Data Info"):
   st.write("Info")
-  data.info()
+  print(data.info())
 
 with st.expander("Data Description"):
   st.info("Description")
-  data.describe()
+  print(data.describe())
 
 data = data.drop("Date",axis=1)
 
