@@ -20,7 +20,7 @@ with st.expander("Walmart Data Info"):
 
 with st.expander("Data Description"):
   st.info("Description")
-  data.description()
+  data.describe()
 
 data = data.drop(axis=1)
 
