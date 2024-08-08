@@ -14,12 +14,12 @@ with st.expander("Walmart Data"):
   st.write("Raw Data")
   data
 
-with st.expander("Walmart Data Info"):
-  st.write("Info")
+
+  st.write("Data Info")
   print(data.info())
 
-with st.expander("Data Description"):
-  st.info("Description")
+
+  st.info("Data Description")
   print(data.describe())
 
 data = data.drop("Date",axis=1)
