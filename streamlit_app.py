@@ -8,8 +8,22 @@ st.title('🤖 ML Linear Regression')
 
 st.write('Machine Learning Model based on linear regression model')
 
-df = pd.read_csv("Walmart_Sales.csv")
+data = pd.read_csv("Walmart_Sales.csv")
 
 with st.expander("Walmart Data"):
   st.write("Raw Data")
-  df
+  data
+
+with st.expander("Walmart Data Info"):
+  st.write("Info")
+  data.info()
+
+with st.expander("Data Description"):
+  st.info("Description")
+  data.description()
+
+data = data.drop(axis=1)
+
+plt.figure(figsize=(12, 6))
+sns.histplot(data['Weekly_Sales'], bins=20, kde=True)
+plt.title('Distribution of Weekly Sales');
