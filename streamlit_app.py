@@ -22,7 +22,7 @@ with st.expander("Data Description"):
   st.info("Description")
   data.describe()
 
-data = data.drop(axis=1)
+data = data.drop("Date",axis=1)
 
 plt.figure(figsize=(12, 6))
 sns.histplot(data['Weekly_Sales'], bins=20, kde=True)
