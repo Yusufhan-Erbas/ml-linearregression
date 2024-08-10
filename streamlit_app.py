@@ -19,8 +19,8 @@ with st.expander("Walmart Data"):
   describe
 
   st.write("Null Data Count")
-  data.isnull().sum()
-  
+  data_null=data.isnull().sum()
+  data_null
   
 data = data.drop("Date",axis=1)
 
