@@ -14,11 +14,6 @@ with st.expander("Walmart Data"):
   st.write("Raw Data")
   data
 
-
-  st.write("Data Info")
-  info=data.info()
-  info
-
   st.info("Data Description")
   describe=data.describe()
   describe
