@@ -14,9 +14,13 @@ with st.expander("Walmart Data"):
   st.write("Raw Data")
   data
 
-  st.info("Data Description")
+  st.write("Data Description")
   describe=data.describe()
   describe
+
+  st.write("Null Data Count")
+  data.isnull().sum()
+  
   
 data = data.drop("Date",axis=1)
 
