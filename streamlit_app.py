@@ -21,7 +21,9 @@ with st.expander("Walmart Data"):
   st.write("Null Data Count")
   data_null=data.isnull().sum()
   data_null
-  
+
+with st.expander("Data Visualization"):
+  st.scatter_chart(data=data,x="Store",y="Weekly_Sales",color="Holiday_Flag")
 data = data.drop("Date",axis=1)
 
 plt.figure(figsize=(12, 6))
