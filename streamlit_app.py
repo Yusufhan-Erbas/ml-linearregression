@@ -16,12 +16,13 @@ with st.expander("Walmart Data"):
 
 
   st.write("Data Info")
-  data.info()
-
+  info=data.info()
+  info
 
   st.info("Data Description")
-  data.describe()
-
+  describe=data.describe()
+  describe
+  
 data = data.drop("Date",axis=1)
 
 plt.figure(figsize=(12, 6))
